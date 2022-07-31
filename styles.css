@@ -1,0 +1,274 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+.timeline-section{
+	background:url("https://i.pinimg.com/736x/b5/44/5c/b5445c2f7fe7411e9504d24bffce2607.jpg");
+	min-height: 100vh;
+	padding: 100px 15px;
+}
+.timeline-items{
+	max-width: 1000px;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.timeline-items::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: #2f363e;
+	left: calc(50% - 1px);
+}
+.timeline-item{
+	margin-bottom: 40px;
+	width: 100%;
+	position: relative;
+}
+.timeline-item:last-child{
+	margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+	text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+	height: 16px;
+	width:16px;
+	background-color: #eaa023;
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top:10px;
+}
+.timeline-date{
+	font-size: 30px;
+	color: #eaa023;
+	margin:6px 0 15px;
+  background: black;
+}
+.timeline-content{
+    background-color: black;
+	padding: 30px;
+	border-radius: 5px;
+}
+.timeline-content h3{
+    font-size: 20px;
+	color: white;
+	margin:0 0 10px;
+	text-transform: capitalize;
+	font-weight: 500;
+}
+.timeline-content p{
+    color: #c8c8c8;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 22px;
+}
+.time{
+text-align: center;
+font-weight: bold;
+background: #FEB139;
+color: #ff523b;
+padding:10px;
+}
+.b{
+  list-style-type: circle;
+  color:white;
+  }
+
+/* responsive */
+@media(max-width: 767px){
+	.timeline-items::before{
+		left: 7px;
+	}
+	.timeline-item:nth-child(odd){
+		padding-right: 0;
+		text-align: left;
+	}
+	.timeline-item:nth-child(odd),
+	.timeline-item:nth-child(even){
+		padding-left: 37px;
+	}
+	.timeline-dot{
+		left:0;
+	}
+}
+
+/*body{
+  font-family:"Poppins";
+} */
+.navbar{
+  display: flex;
+  align-items: center;
+/*  padding: 20px; */
+}
+nav{
+  flex:1;
+  text-align: right;
+  background: Black;
+  max-width: 1700px;
+}
+.logo
+{
+  max-width: 1200px;
+  margin: auto;
+  /*padding-left: 25px;
+  padding-right: 25px; */
+}
+
+nav ul{
+  display:inline-block;
+
+  list-style:none;
+}
+nav ul li{
+  display:inline-block;
+  margin: 20px;
+  font-size: 25px;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.container{
+  max-width: 1800px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;;
+}
+.row{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+.col-2{
+  flex-basis:40%;
+  min-width: 50px;
+
+}
+.col-2 img
+{
+  max-width: 100%;
+  padding:50px 0;
+
+}
+.col-2 h1{
+  font-size: 60px;
+  line-height:60px;
+  margin:25px 0;
+  padding-left: 70px;
+}
+
+.header{
+  transition: transform 0.25s ease;
+  background: linear-gradient(135deg, black 0%, white 100%);
+}
+.header row{
+  margin-top: 30px;
+}
+
+.categories{
+  margin-top: 70px ;
+}
+.col-3{
+ flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom:30px;
+}
+.col-3 img{
+  width: 100%;
+}
+.small-container{
+  max-width: 1080px;
+  margin:auto;
+  padding-left:  25px;
+  padding-right: 25px;
+
+}
+.col-4{
+  flex-basis: 30%;
+  min-width: 400px;
+  margin-bottom: 30px;
+  transition: transform 0.5s;
+
+}
+.col-4 img {
+  width:100%;
+}
+.title
+{
+  text-align: center;
+  line-height: 50px;
+  position:relative;
+  margin-bottom: 50px;
+  color:#ff523b;
+}
+.title::after
+{
+  content: "";
+  background: #ff523b;
+  width:80px;
+  height:5px;
+  border-radius: 5px;
+  position:absolute;
+  bottom:0;
+  left:50%;
+  transform:translatex(-50%);
+}
+h4{
+  color:black;
+  font-weight:normal;
+}
+.col-4:hover{
+  transform: translateY(-50px);
+}
+.para{
+  padding-left: 100px;
+}
+.quote-img{
+  width:100%;
+}
+.quote{
+background: radial-gradient(#fff,#A2CDCD /*#F5C0C0*/);
+margin-top: 80px;
+padding:30px;
+}
+
+.q{
+  font-style: oblique;
+  color:#ff523b;
+}
+
+
+ul{
+  list-style: none;
+}
+.app-logo{
+  margin-top:20px;
+}
+.app-logo img{
+  width:140px;
+  padding: 10px
+}
+.lg{
+  width:100%;
+}
+.date{
+  color: white;
+}
+
+
+/*Timeline*/
